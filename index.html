@@ -1,61 +1,121 @@
 <!DOCTYPE html>
-padding: 1rem 2.5rem;
-font-family: 'Sintony', sans-serif;
-font-size: 1rem;
-text-transform: uppercase;
-letter-spacing: 2px;
-cursor: pointer;
-transition: all 0.4s ease;
-border-radius: 40px;
-}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEGM SECRET CLUB</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Sintony:wght@400;700&display=swap');
 
-button:hover {
-background-color: #f5f5f5;
-color: #000;
-transform: scale(1.05);
-}
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: #f5f5f5;
+      font-family: 'Cutive Mono', monospace;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      overflow-x: hidden;
+    }
 
-.contact {
-display: flex;
-gap: 1rem;
-}
+    h1 {
+      font-size: 3.5rem;
+      letter-spacing: 4px;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      color: #fafafa;
+      animation: fadeIn 2s ease-out;
+    }
 
-.contact a {
-text-decoration: none;
-}
+    p {
+      max-width: 700px;
+      font-size: 1.15rem;
+      line-height: 1.7;
+      color: #e0e0e0;
+      margin-bottom: 2rem;
+      animation: fadeIn 3s ease-in;
+    }
 
-footer {
-position: absolute;
-bottom: 20px;
-font-size: 0.9rem;
-color: #777;
-letter-spacing: 1px;
-}
+    .rules {
+      border-top: 1px solid #222;
+      border-bottom: 1px solid #222;
+      padding: 2rem 0;
+      margin: 2rem 0;
+      animation: fadeIn 4s ease-in;
+    }
 
-@keyframes fadeIn {
-from { opacity: 0; transform: translateY(10px); }
-to { opacity: 1; transform: translateY(0); }
-}
-</style>
+    .rules h2 {
+      font-family: 'Sintony', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 1rem;
+    }
+
+    button {
+      background: none;
+      border: 1px solid #f5f5f5;
+      color: #f5f5f5;
+      padding: 1rem 2.5rem;
+      font-family: 'Sintony', sans-serif;
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      cursor: pointer;
+      transition: all 0.4s ease;
+      border-radius: 40px;
+    }
+
+    button:hover {
+      background-color: #f5f5f5;
+      color: #000;
+      transform: scale(1.05);
+    }
+
+    .contact {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .contact a {
+      text-decoration: none;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.9rem;
+      color: #777;
+      letter-spacing: 1px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
-<h1>NEGM SECRET CLUB</h1>
-<p>Welcome to NEGM — a secret community built for those who move in silence but make noise when it matters. Not everyone is invited. If you’re here, you’re already part of something bigger.</p>
+  <h1>NEGM SECRET CLUB</h1>
+  <p>Welcome to NEGM — a secret community built for those who move in silence but make noise when it matters. Not everyone is invited. If you’re here, you’re already part of something bigger.</p>
 
-<div class="rules">
-<h2>Rules of the Club</h2>
-<p>1. Stay unseen. <br>
-2. Move fast, stay smart. <br>
-3. Respect the code. <br>
-4. Win quietly. <br>
-5. The game begins when you say so.</p>
-</div>
+  <div class="rules">
+    <h2>Rules of the Club</h2>
+    <p>1. Stay unseen. <br>
+       2. Move fast, stay smart. <br>
+       3. Respect the code. <br>
+       4. Win quietly. <br>
+       5. The game begins when you say so.</p>
+  </div>
 
-<div class="contact">
-<a href="mailto:negmsecretclub@gmail.com"><button>Email Us</button></a>
-<a href="https://www.instagram.com/negmsecret" target="_blank"><button>DM on Instagram</button></a>
-</div>
+  <div class="contact">
+    <a href="mailto:negmsecretclub@gmail.com"><button>Email Us</button></a>
+    <a href="https://www.instagram.com/negmsecret" target="_blank"><button>DM on Instagram</button></a>
+  </div>
 
-<footer>© 2025 NEGM SECRET CLUB. All Rights Reserved.</footer>
+  <footer>© 2025 NEGM SECRET CLUB. All Rights Reserved.</footer>
 </body>
 </html>
