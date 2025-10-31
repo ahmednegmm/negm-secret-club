@@ -5,54 +5,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NEGM SECRET CLUB</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Sintony:wght@400;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Playfair+Display:wght@500;700&display=swap');
 
-    body {
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Cutive Mono', monospace;
       background-color: #000;
       color: #f5f5f5;
-      font-family: 'Cutive Mono', monospace;
+      overflow-x: hidden;
+      text-align: center;
+    }
+
+    /* Background video styling */
+    .video-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      filter: brightness(55%);
+    }
+
+    header {
+      position: relative;
+      height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      min-height: 100vh;
-      text-align: center;
-      overflow-x: hidden;
-    }
-
-    h1 {
-      font-size: 3.5rem;
-      letter-spacing: 4px;
-      margin-bottom: 1rem;
       text-transform: uppercase;
-      color: #fafafa;
-      animation: fadeIn 2s ease-out;
+      letter-spacing: 4px;
+      color: #f0f0f0;
+      text-shadow: 0px 2px 10px rgba(0,0,0,0.8);
+      animation: fadeIn 3s ease-out;
     }
 
-    p {
-      max-width: 700px;
-      font-size: 1.15rem;
-      line-height: 1.7;
-      color: #e0e0e0;
-      margin-bottom: 2rem;
-      animation: fadeIn 3s ease-in;
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 4rem;
+      margin-bottom: 1rem;
     }
 
-    .rules {
+    header p {
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+      color: #ddd;
+    }
+
+    section {
+      background: rgba(0, 0, 0, 0.95);
+      padding: 5rem 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      line-height: 1.8;
       border-top: 1px solid #222;
       border-bottom: 1px solid #222;
-      padding: 2rem 0;
-      margin: 2rem 0;
-      animation: fadeIn 4s ease-in;
     }
 
-    .rules h2 {
-      font-family: 'Sintony', sans-serif;
+    section h2 {
+      font-family: 'Playfair Display', serif;
       text-transform: uppercase;
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
       letter-spacing: 2px;
-      margin-bottom: 1rem;
+      color: #f5f5f5;
     }
 
     button {
@@ -60,13 +84,14 @@
       border: 1px solid #f5f5f5;
       color: #f5f5f5;
       padding: 1rem 2.5rem;
-      font-family: 'Sintony', sans-serif;
+      font-family: 'Playfair Display', serif;
       font-size: 1rem;
       text-transform: uppercase;
       letter-spacing: 2px;
       cursor: pointer;
       transition: all 0.4s ease;
       border-radius: 40px;
+      margin-top: 2rem;
     }
 
     button:hover {
@@ -75,47 +100,60 @@
       transform: scale(1.05);
     }
 
-    .contact {
-      display: flex;
-      gap: 1rem;
-    }
-
-    .contact a {
-      text-decoration: none;
-    }
-
     footer {
-      position: absolute;
-      bottom: 20px;
+      padding: 2rem;
+      color: #888;
       font-size: 0.9rem;
-      color: #777;
       letter-spacing: 1px;
+    }
+
+    footer span {
+      color: #f5f5f5;
+      font-weight: bold;
     }
 
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(10px); }
       to { opacity: 1; transform: translateY(0); }
     }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.8rem;
+      }
+      section {
+        padding: 3rem 1rem;
+      }
+    }
   </style>
 </head>
 <body>
-  <h1>NEGM SECRET CLUB</h1>
-  <p>Welcome to NEGM — a secret community built for those who move in silence but make noise when it matters. Not everyone is invited. If you’re here, you’re already part of something bigger.</p>
 
-  <div class="rules">
+  <!-- Background video -->
+  <video class="video-bg" autoplay muted loop playsinline>
+    <source src="https://www.dropbox.com/scl/fi/tmpgcy2ybrad5qj3q6hwg/ssstik.io_-shotbyfaces_1761828446276.mp4?dl=1" type="video/mp4">
+  </video>
+
+  <header>
+    <h1>NEGM SECRET CLUB</h1>
+    <p>Where silence speaks louder than noise.</p>
+  </header>
+
+  <section>
     <h2>Rules of the Club</h2>
-    <p>1. Stay unseen. <br>
-       2. Move fast, stay smart. <br>
-       3. Respect the code. <br>
-       4. Win quietly. <br>
-       5. The game begins when you say so.</p>
-  </div>
+    <p>
+      1. Stay unseen.<br>
+      2. Move fast, stay sharp.<br>
+      3. Respect the code.<br>
+      4. Win quietly.<br>
+      5. The game begins when you say so.
+    </p>
+    <a href="mailto:negmsecretclub@gmail.com"><button>Apply Now</button></a>
+  </section>
 
-  <div class="contact">
-    <a href="mailto:negmsecretclub@gmail.com"><button>Email Us</button></a>
-    <a href="https://www.instagram.com/negmsecret" target="_blank"><button>DM on Instagram</button></a>
-  </div>
+  <footer>
+    Special Custom — Designed by <span>NEGM</span>
+  </footer>
 
-  <footer>© 2025 NEGM SECRET CLUB. All Rights Reserved.</footer>
 </body>
 </html>
